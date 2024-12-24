@@ -22,21 +22,24 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex justify-around items-center bg-gradient-to-tr from-gray-800 to-amber-300 md:h-screen font-poppins">
+    <div className="flex justify-around items-center bg-gradient-to-tr from-gray-900 to-black h-screen font-nunito">
+      
+      <h2 className="font-afacadFlux text-purple-400 font-extrabold text-2xl underline -rotate-0 relative z-0 bottom-64 md:left-96 animate-pulse">becomeIngenious</h2>
+
       <form
-        className="bg-transparent p-6 rounded-md shadow-lg md:w-2/6 w-5/6 mx-10 mt-0 md:mt-0 h-screen md:h-5/6 scale-90"
+        className="bg-transparent p-6 rounded-md shadow-lg md:w-screen scale-75 absolute z-50"
         onSubmit={handleSubmit}
         id="login-page"
       >
-        <h3 className="text-4xl font-bold text-center mb-10 p-2 border-b text-white uppercase">
+        <h3 className="text-4xl font-bold text-center mb-10 p-2 border-b md:border-0 text-white uppercase">
           Sign up
         </h3>
 
-        <div className="my-7 text-xl text-purple-300">
+        <div className="my-7 text-xl text-white tracking-widest">
           <label className="font-semibold">Username:</label>
-          <div className="flex rounded w-full items-center bg-white p-1 mt-2">
+          <div className="flex border-transparent w-full items-center bg-transparent p-1 mt-2">
             <input
-              className="flex-auto border-0 outline-0 p-1 text-black w-full"
+              className="flex-auto p-2 bg-transparent outline-none border-b-4 rounded-lg text-white w-full"
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -45,11 +48,11 @@ const Signup = () => {
           </div>
         </div>
 
-        <div className="my-7 text-xl text-purple-300">
+        <div className="my-7 text-xl text-white tracking-widest">
           <label className="font-semibold">Email:</label>
-          <div className="flex rounded w-full items-center bg-white p-1 mt-2">
+          <div className="flex rounded w-full items-center bg-transparent p-1 mt-2">
             <input
-              className="flex-auto border-0 outline-0 p-1 text-black w-full"
+              className="flex-auto p-2 bg-transparent outline-none border-b-4 rounded-lg text-white w-full"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -58,11 +61,11 @@ const Signup = () => {
           </div>
         </div>
 
-        <div className="my-7 text-xl text-purple-300">
+        <div className="my-7 text-xl text-white tracking-widest">
           <label className="font-semibold">Password:</label>
-          <div className="flex rounded w-full items-center bg-white p-1 mt-2">
+          <div className="flex rounded w-full items-center bg-transparent p-1 mt-2">
             <input
-              className="flex-1 p-1 border-0 outline-0 text-black w-full"
+              className="flex-auto p-2 bg-transparent outline-none border-b-4 rounded-lg text-white w-full"
               type={revealed ? "password" : "text"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -73,7 +76,7 @@ const Signup = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="size-6 me-2 text-blue-900 hover:scale-125 transition ease-in-out duration-300"
+                className="size-6 me-2 text-white hover:scale-125 transition ease-in-out duration-300"
               >
                 {revealed ? (
                   <>
@@ -100,10 +103,10 @@ const Signup = () => {
           </div>
         </div>
 
-        <div className="mx-auto text-center mt-10 mb-5">
+        <div className="mx-auto text-center mt-10 mb-5 tracking-widest">
           <button
             disabled={isLoading}
-            className="text-xl text-center font-semibold cursor-pointer text-white border-0 rounded-md p-2 bg-purple-800 transition ease-out duration-500 hover:scale-125"
+            className="text-xl text-center font-semibold cursor-pointer text-white border-0 rounded-md p-2 bg-blue-600 transition ease-out duration-500 hover:scale-125"
           >
             Sign up
           </button>
@@ -114,12 +117,12 @@ const Signup = () => {
           </div>
         )}
 
-        <div className="text-black mt-14 mb-0 bg-gray-200 rounded p-2">
+        <div className="text-blue-200 text-xl mt-14 mb-0 rounded p-2 tracking-widest">
           <p>
             Already have an account?{" "}
             <Link
               to="/login"
-              className="text-red-600 hover:underline font-semibold hover:font-bold"
+              className="text-green-400 hover:underline font-semibold hover:font-bold"
             >
               Log in
             </Link>
@@ -127,7 +130,7 @@ const Signup = () => {
         </div>
       </form>
 
-      <div className="md:animate-slowBounce hidden sm:block">
+      <div className="animate-slowBounce sm:block absolute z-0 opacity-30">
         <img src={logo} alt="" width="600" height="600" />
       </div>
     </div>
