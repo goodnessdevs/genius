@@ -24,7 +24,7 @@ const Signup = () => {
   return (
     <div className="flex justify-around items-center bg-gradient-to-tr from-gray-900 to-black h-screen font-nunito">
       
-      <h2 className="font-afacadFlux text-amber-400 font-extrabold text-2xl underline -rotate-0 relative z-0 bottom-64 md:left-96 animate-pulse">becomeIngenious</h2>
+      <h2 className="font-afacadFlux text-yellow-400 font-extrabold text-2xl underline -rotate-0 relative z-0 bottom-64 md:left-96 animate-pulse">becomeIngenious</h2>
 
       <form
         className="bg-transparent p-6 rounded-md shadow-lg md:w-screen scale-75 absolute z-50"
