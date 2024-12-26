@@ -23,7 +23,7 @@ const Authentication = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="size-5 text-purple-600 inline shadow-lg mb-1 bg-amber-400 rounded-full"
+          className="size-5 text-purple-600 inline shadow-lg mb-1 bg-amber-400 rounded-full animate-spin360"
         >
           <path
             fillRule="evenodd"

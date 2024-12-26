@@ -33,7 +33,7 @@ const Explore = () => {
           <Themes />
         </div>
 
-        <header className={`${theme.text2} my-3`}>
+        <header className={`${theme.text2} my-3 animate-slowBounce`}>
           <h1 className="text-6xl font-bold">Explore various Innovators</h1>
           <h2 className="text-2xl font-bold mt-1">And their work</h2>
         </header>

@@ -27,7 +27,7 @@ const Home = () => {
           <Themes />
         </div>
 
-        <header className={`${theme.text2} my-3`}>
+        <header className={`${theme.text2} my-3 animate-slowBounce`}>
           <h1 className="text-6xl font-bold">Discover Innovations</h1>
           <h2 className="text-2xl font-bold mt-1">And genius ideas</h2>
         </header>

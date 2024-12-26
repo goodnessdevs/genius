@@ -23,7 +23,7 @@ const Themes = () => {
   const theme = isLightTheme ? light : dark;
 
   return (
-    <div className={`flex justify-between items-center md:justify-between ${theme.bg6} p-2 mb-8 rounded-full shadow text-zinc-900`}>
+    <div className={`flex justify-between items-center md:justify-between ${theme.bg6} p-2 mb-8 rounded-full shadow ${theme.text}`}>
       <div className="mx-2">
         <h2 className="font-semibold">{messages[index]}</h2>
       </div>

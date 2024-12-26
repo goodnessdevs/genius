@@ -33,11 +33,11 @@ const Quiz = () => {
           <Themes />
         </div>
         <h2
-          className={`${theme.text} tracking-widest text-2xl font-bold text-center border-b p-5`}
+          className={`${theme.text} tracking-widest text-2xl font-bold text-center p-5 animate-slowBounce`}
         >
           QUIZ
         </h2>
-        <div className={`text-black bg-yellow-200 p-5 rounded-2xl shadow-2xl`}>
+        <div className={`text-black bg-gray-300 p-5 rounded-2xl shadow-2xl`}>
           {queries &&
             queries.map((query, index) => (
               <QuestionDetails key={index} query={query} index={index} />

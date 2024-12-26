@@ -5,12 +5,13 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const user = require("./routes/user");
 const quizRoutes = require("./routes/quizRoutes");
+const docRoutes = require("./routes/docRoutes");
 
 const app = express();
 
 // Allow requests from domain
 app.use(cors({
-    origin: 'https://becomeingenious.vercel.app',
+    origin: 'http://localhost:3000',
     methods: 'GET,POST,PUT,DELETE'
 }));
 
@@ -23,6 +24,7 @@ app.use((req, res, next) => {
 // Route registry
 app.use("/api/user", user);
 app.use("/api/quiz", quizRoutes);
+app.use("/api/documentary", docRoutes);
 
 mongoose
   .connect(process.env.DATABASE_URL)
