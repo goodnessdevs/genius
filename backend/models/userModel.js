@@ -31,10 +31,13 @@ userSchema.statics.signup = async function (username, email, password) {
 
     // validation
     if (!email || !password || !username) {
-        throw Error('All fields must be filled');
+        throw Error('All fields must be filled!');
     }
     if (!validator.isAlphanumeric(username)) {
-        throw Error('Avoid whitespaces and special characters in your username');
+        throw Error('Avoid whitespaces and special characters in your username.');
+    }
+    if (username.length < 3) {
+        throw Error('Username is too short, must not be less than 3 characters.');
     }
     // if (!hasAlphanumeric(username)) {
     //     throw Error('Username must contain alphanumeric characters');
@@ -43,19 +46,19 @@ userSchema.statics.signup = async function (username, email, password) {
         throw Error('Invalid email')
     }
     if (!validator.isStrongPassword(password)) {
-        throw Error("Password must contain at least 8 characters having an uppercase, a lowercase, a number, and a special character")
+        throw Error("Password must contain at least 8 characters having an uppercase, a lowercase, a number, and a special character.")
     }
 
     const usernameExists = await this.findOne({ username });
 
     if (usernameExists) {
-        throw Error('username already taken');
+        throw Error('username already taken.');
     }
 
     const emailExists = await this.findOne({ email });
 
     if (emailExists) {
-        throw Error('Email already in use');
+        throw Error('Email already in use.');
     }
 
     const salt = await bcrypt.genSalt(10);
@@ -71,7 +74,7 @@ userSchema.statics.login = async function (email, password) {
 
     // validation
     if (!email || !password) {
-        throw Error('All fields must be filled')
+        throw Error('All fields must be filled!')
     }
 
     const user = await this.findOne({ email });
@@ -85,7 +88,7 @@ userSchema.statics.login = async function (email, password) {
     }
     
     if (!validator.isStrongPassword(password)) {
-        throw Error("Password not strong enough! It must contain at least 8 characters having an uppercase, a lowercase, a number and a special character");
+        throw Error("Password not strong enough! It must contain at least 8 characters having an uppercase, a lowercase, a number and a special character.");
     }
 
     const match = await bcrypt.compare(password, user.password);

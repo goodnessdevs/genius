@@ -71,7 +71,7 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <span className="cursor-pointer" onClick={togglePassword}>
+            <span className="cursor-pointer ms-2" onClick={togglePassword}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
