@@ -26,7 +26,7 @@ const Quiz = () => {
   }, []);
 
   return (
-    <div className={`${theme.bg} md:ml-52 font-nunito h-full`}>
+    <div className={`${theme.bg4} md:ml-52 font-nunito h-full`}>
       <div className="px-12 py-6">
         <div>
           <Authentication />

@@ -29,7 +29,7 @@ const Dyk = () => {
   }, []);
 
   return (
-    <div className={`${theme.bg} md:ml-52 font-poppins`}>
+    <div className={`${theme.bg4} md:ml-52 font-poppins`}>
       <div className="px-12 py-6">
         <div>
           <Authentication />

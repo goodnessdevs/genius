@@ -44,7 +44,7 @@ const Authentication = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className={`size-5 mt-3 me-1 ${theme.text}`}
+              className={`size-5 mt-2 me-1 ${theme.text}`}
             >
               <path
                 fillRule="evenodd"

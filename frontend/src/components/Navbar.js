@@ -16,10 +16,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${theme.bg3} md:fixed md:h-screen md:w-52 overflow-auto`}
+      className={`${theme.bg5} md:fixed md:h-screen md:w-52 overflow-auto`}
       id="navbar"
     >
-      <div className={`${theme.text} flex justify-between items-center`}>
+      <div className={`text-white flex justify-between items-center`}>
         <h1 className="font-bold p-4  md:ml-6 border-gray-200 flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,9 +57,7 @@ const Navbar = () => {
       <hr />
 
       <div
-        className={`${display ? "block px-2" : "hidden"} ${
-          theme.text
-        } md:block`}
+        className={`${display ? "block px-2" : "hidden"} text-white md:block`}
         id="menu"
       >
         <Link
@@ -175,6 +173,10 @@ const Navbar = () => {
 
           <span>About</span>
         </Link>
+      </div>
+
+      <div className="lg:mt-60 mt-56 md:block hidden text-white font-bold tracking-wide mx-2">
+        <span>&copy; Ingenious labs</span>
       </div>
     </nav>
   );

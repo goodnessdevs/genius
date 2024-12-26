@@ -26,7 +26,7 @@ const Explore = () => {
   const { isLightTheme, light, dark } = useContext(ThemeContext);
   const theme = isLightTheme ? light : dark;
   return (
-    <div className={` ${theme.bg} md:ml-52`}>
+    <div className={` ${theme.bg4} md:ml-52`}>
       <div className="py-8 px-12">
         <div>
           <Authentication />

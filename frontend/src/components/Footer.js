@@ -4,7 +4,7 @@ const Footer = () => {
       <div>
         <h2 className="uppercase my-2 text-2xl tracking-widest">contact info:</h2>
         <p className="mb-1">geenine77@gmail.com</p>
-        <p>+234 816-544-9350</p>
+        <p>+234 807-061-3801</p>
       </div>
       
       <div>

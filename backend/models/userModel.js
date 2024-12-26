@@ -19,31 +19,31 @@ const userSchema = new Schema({
     }
 });
 
-const hasAlphanumeric = (username) => {
-    const hasLetters = /[a-zA-z]/.test(username);
-    const hasNumbers = /[0-9]/.test(username);
+// const hasAlphanumeric = (username) => {
+//     const hasLetters = /[a-zA-z]/.test(username);
+//     const hasNumbers = /[0-9]/.test(username);
 
-    return hasLetters && hasNumbers;
-}
+//     return hasLetters && hasNumbers;
+// }
 
 // static signup method
 userSchema.statics.signup = async function (username, email, password) {
 
     // validation
     if (!email || !password || !username) {
-        throw Error('All fields must be filled')
+        throw Error('All fields must be filled');
     }
     if (!validator.isAlphanumeric(username)) {
-        throw Error('Must contain only alphanumeric characters');
+        throw Error('Avoid whitespaces and special characters in your username');
     }
-    if (!hasAlphanumeric(username)) {
-        throw Error('Username must contain alphanumeric characters');
-    }
+    // if (!hasAlphanumeric(username)) {
+    //     throw Error('Username must contain alphanumeric characters');
+    // }
     if (!validator.isEmail(email)) {
         throw Error('Invalid email')
     }
     if (!validator.isStrongPassword(password)) {
-        throw Error("Password not strong enough")
+        throw Error("Password must contain at least 8 characters having an uppercase, a lowercase, a number, and a special character")
     }
 
     const usernameExists = await this.findOne({ username });
@@ -85,7 +85,7 @@ userSchema.statics.login = async function (email, password) {
     }
     
     if (!validator.isStrongPassword(password)) {
-        throw Error("Password not strong enough! It should contain both uppercase and lowercase alphabets, a number and a special character");
+        throw Error("Password not strong enough! It must contain at least 8 characters having an uppercase, a lowercase, a number and a special character");
     }
 
     const match = await bcrypt.compare(password, user.password);

@@ -8,7 +8,7 @@ const About = () => {
   const { isLightTheme, light, dark } = useContext(ThemeContext);
   const theme = isLightTheme ? light : dark;
   return (
-    <div className={`${theme.bg} h-full md:ml-52`}>
+    <div className={`${theme.bg4} h-full md:ml-52`}>
       <div className="px-12 py-8">
         <Authentication />
         <Themes />
