@@ -11,7 +11,7 @@ const app = express();
 
 // Allow requests from domain
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://becomeingenious.vercel.app',
     methods: 'GET,POST,PUT,DELETE'
 }));
 
