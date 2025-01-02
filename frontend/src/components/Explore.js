@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Themes from "./Themes";
 import Footer from "./Footer";
 import Authentication from "./Authentication";
@@ -39,7 +40,7 @@ const Explore = () => {
         </header>
 
         <div className="grid md:grid-cols-3 gap-10 mt-20">
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={fleming}
               alt=""
@@ -54,9 +55,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1881-1955</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={faraday}
               alt=""
@@ -71,9 +72,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1791-1867</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={grahambell}
               alt=""
@@ -88,9 +89,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1847-1922</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={newton}
               alt=""
@@ -105,9 +106,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1643-1727</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={pascal}
               alt=""
@@ -122,9 +123,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1623-1662</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={einstein}
               alt=""
@@ -139,9 +140,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1879-1955</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={galileo}
               alt=""
@@ -156,9 +157,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1564-1642</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={franklin}
               alt=""
@@ -173,9 +174,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1706-1790</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={tesla}
               alt=""
@@ -183,16 +184,16 @@ const Explore = () => {
             />
             <div className="m-4">
               <span className="text-2xl font-bold text-zinc-900">
-                Nikolas Tesla
+                Nikola Tesla
               </span>
 
               <div>
                 <span className="tracking-wider text-blue-900">1856-1943</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={edison}
               alt=""
@@ -207,9 +208,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1847-1931</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={wright}
               alt=""
@@ -217,7 +218,7 @@ const Explore = () => {
             />
             <div className="m-4">
               <span className="text-2xl font-bold text-zinc-900">
-                Wright Brothers
+                The Wright Brothers
               </span>
 
               <div>
@@ -229,9 +230,9 @@ const Explore = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={benz}
               alt=""
@@ -246,9 +247,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1844-1929</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={nobel}
               alt=""
@@ -263,9 +264,9 @@ const Explore = () => {
                 <span className="tracking-wider text-blue-900">1833-1896</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={davinci}
               alt=""
@@ -273,16 +274,16 @@ const Explore = () => {
             />
             <div className="m-4">
               <span className="text-2xl font-bold text-zinc-900">
-                Leonardo Da vinci
+                Leonardo da Vinci
               </span>
 
               <div>
                 <span className="tracking-wider text-blue-900">1452-1519</span>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="card">
+          <Link className="card" to="/documentary">
             <img
               src={timBL}
               alt=""
@@ -290,7 +291,7 @@ const Explore = () => {
             />
             <div className="m-4">
               <span className="text-2xl font-bold text-zinc-900">
-                Tim Berners-lee
+                Tim Berners-Lee
               </span>
 
               <div>
@@ -299,7 +300,8 @@ const Explore = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </Link>
+
         </div>
       </div>
       <Footer />

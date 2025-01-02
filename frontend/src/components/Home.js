@@ -41,7 +41,7 @@ const Home = () => {
             </h4>
             <div className="mt-8 grid lg:grid-cols-3 gap-10">
               
-              <div className="card">
+              <Link className="card" to="/documentary">
                 <img
                   src={edison}
                   alt=""
@@ -57,9 +57,9 @@ const Home = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="card">
+              <Link className="card" to="/documentary">
                 <img
                   src={franklin}
                   alt=""
@@ -75,9 +75,9 @@ const Home = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="card">
+              <Link className="card" to="/documentary">
                 <img
                   src={benz}
                   alt=""
@@ -93,13 +93,13 @@ const Home = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className={`m-3 text-center md:text-end`}>
               <Link
                 to="/explore"
-                className={`${theme.text3} underline font-bold`}
+                className={`${theme.text} underline font-bold`}
               >
                 More...
               </Link>
@@ -114,7 +114,7 @@ const Home = () => {
             </h4>
             <div className="mt-8 grid md:grid-cols-3 gap-10">
 
-              <div className="card">
+              <Link className="card" to="/documentary">
                 <img
                   src={einstein}
                   alt=""
@@ -130,9 +130,9 @@ const Home = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="card">
+              <Link className="card" to="/documentary">
                 <img
                   src={newton}
                   alt=""
@@ -148,9 +148,9 @@ const Home = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="card">
+              <Link className="card" to="/documentary">
                 <img
                   src={galileo}
                   alt=""
@@ -166,7 +166,7 @@ const Home = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

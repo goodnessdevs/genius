@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useSignup } from "../hooks/useSignup";
 import logo from "../img/logo512.png";
-import { Circles, Rings, ThreeDots } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 
 const { useState } = require("react");
 

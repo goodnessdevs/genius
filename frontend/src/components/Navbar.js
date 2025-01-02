@@ -176,7 +176,8 @@ const Navbar = () => {
       </div>
 
       <div className="lg:mt-60 mt-56 md:block hidden text-white font-bold tracking-wide mx-2">
-        <span>&copy; Ingenious labs</span>
+        <hr />
+        <span>&copy; Ingenious labs</span><hr />
       </div>
     </nav>
   );

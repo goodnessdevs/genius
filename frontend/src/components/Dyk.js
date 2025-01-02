@@ -36,7 +36,7 @@ const Dyk = () => {
           <Themes />
         </div>
         <div
-          className={`${bgCount} text-black py-6 px-10 rounded-xl shadow-lg`}
+          className={`${bgCount} text-black py-6 px-10 rounded-xl shadow-lg whitespace-normal break-words`}
         >
           <h2 className="text-2xl font-semibold mt-2 mb-5">
             There's a lot of fascinating stuff out there in the universe! Dive
@@ -130,7 +130,7 @@ const Dyk = () => {
             <li>Bananas are naturally slightly radioactive.</li>
             <li>
               An adult human body is made up of around
-              7,000,000,000,000,000,000,000,000,000 atoms.
+              seven octillion (27 zeros) atoms.
             </li>
             <li>
               Honey never spoils—archaeologists have found pots of honey in
@@ -174,7 +174,7 @@ const Dyk = () => {
             <li>
               There's a planet that rains glass sideways due to extreme winds.
             </li>
-            <li>Ants never sleep. They also don’t have lungs.</li>
+            <li>Ants never sleep. They also don't have lungs.</li>
             <li>
               The longest-living cells in the body are brain cells, which can
               live an entire lifetime.

@@ -11,12 +11,16 @@ module.exports = {
           100: '#aaa',
           200: '#999'
         }
-      },
+      }, 
+      backgroundImage: {
+        oldPaper: 'url("img/paper.jpg")'
+      }, 
       fontFamily: {
         quicksand: 'Quicksand',
         poppins: "Poppins",
         nunito: 'Nunito',
-        afacadFlux: 'Afacad Flux'
+        afacadFlux: 'Afacad Flux', 
+        playwrite: "Playwrite ZA Guides"
       },
       keyframes: {
         spin360: {

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useLogin } from "../hooks/useLogin";
 import logo from "../img/logo.png";
-import { Circles, Rings, ThreeDots } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 
 const Login = () => {
   const [email, setEmail] = useState("");

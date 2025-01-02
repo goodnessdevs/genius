@@ -6,6 +6,7 @@ import Home from "./Home";
 import Explore from "./Explore";
 import About from "./About";
 import Quiz from "./Quiz";
+import Documentary from "./Documentary";
 import Login from "../forms/Login";
 import Signup from "../forms/Signup";
 import Dyk from "./Dyk";
@@ -25,6 +26,7 @@ const AllPages = () => {
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/about" element={<About />} />
           <Route path="/dyk" element={<Dyk />} />
+          <Route path="/documentary" element={<Documentary />} />
           <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
           <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/" />} />
         </Routes>
